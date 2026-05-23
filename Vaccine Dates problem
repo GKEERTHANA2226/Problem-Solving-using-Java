@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+	    while(t-->0){
+		int a = in.nextInt();
+		int b = in.nextInt();
+		int c = in.nextInt();
+		
+		if( a >= b && a <= c){
+		    System.out.println("Take second dose now");
+		    
+		}
+		  if( a > b && a > c){
+		    System.out.println("Too Late");
+		  }
+		if( a < b && a < c){
+		    System.out.println("Too Early");
+		}
+		}
+		    
+	in.close();
+
+	}
+}
