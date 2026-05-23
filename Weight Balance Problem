@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+  class Solution {
+       public static void main(String args[]) {
+           Scanner in = new Scanner(System.in);
+           int t = in.nextInt();
+           while(t-->0){
+               int w1 = in.nextInt();
+               int w2 = in.nextInt();
+               int x1 = in.nextInt();
+               int x2 = in.nextInt();
+               int m = in.nextInt();
+               
+                int result = w2 - w1;
+                
+             if(result <= x1 || result < x2)
+              System.out.println("0");
+              else
+              System.out.println("1");
+             
+               
+           }
+        in.close();   
+       }
+   }
