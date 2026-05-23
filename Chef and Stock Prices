@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+		while(t --> 0){
+		    Double S = in.nextDouble(), A = in.nextDouble();
+		    Double B = in.nextDouble(), C = in.nextDouble();
+		    double newPrice = S * (100 + C) / 100;
+		  if(newPrice >= A && newPrice <= B){
+		      System.out.println("Yes");
+		  }else{
+		      System.out.println("No");
+		  }
+		}
+		in.close();
+	}
+}
