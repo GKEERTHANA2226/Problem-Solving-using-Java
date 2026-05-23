@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+		
+		while ( t-->0){
+		int A = in.nextInt();
+		int B = in.nextInt();
+		int C = in.nextInt();
+		int sum = 0; 
+		int min = Math.min(A,Math.min(B,C));
+		 sum +=  A + B + C - min;
+       System.out.println(sum);
+	}
+	in.close();
+}
+}
