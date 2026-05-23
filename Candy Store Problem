@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
+
+        while (t-- > 0) {
+            int goal = scanner.nextInt();
+            int sold = scanner.nextInt();
+             
+             if(sold <= goal){
+                 System.out.println(sold);
+             } 
+             else{
+                 System.out.println(goal+(sold-goal)*2);
+             }
+        }
+        scanner.close();
+    }
+}
